@@ -1,96 +1,209 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h2>Encuesta Turistica Cotopaxi</h2>
-        <form>
-            <label for="name">¿Cual es su nombre? </label><br>
-            <input type="text" id="name" name="name"><br>
+<html lang="es" data-bs-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encuesta Turística Cotopaxi</title>
 
-            <p>¿Cual es tu rango de edad?:</p>
-            <input type="radio" id="edad1" name="edad" value="-18">
-            <label for="edad1">Menos de 18</label><br>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    </head>
+    <body class="bg-light">
 
-            <input type="radio" id="edad2" name="edad" value="18-25">
-            <label for="edad2">18-25</label><br>
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
 
-            <input type="radio" id="edad3" name="edad" value="25-40">
-            <label for="edad3">25-40</label><br>
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4">
 
-            <input type="radio" id="edad4" name="edad" value="41-60">
-            <label for="edad4">41-60</label><br>
+                            <h2 class="text-success text-center mb-4">Encuesta Turística Cotopaxi</h2>
+                            <form>
+                                <div class="mb-4">
+                                    <label for="name" class="form-label fw-bold">
+                                        ¿Cuál es su nombre?
+                                    </label>
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="Ingrese su nombre">
+                                </div>
 
-            <input type="radio" id="edad5" name="edad" value="60+">
-            <label for="edad5">Mas de 60</label><br>
+                                <fieldset class="mb-4">
+                                    <legend class="fs-6 fw-bold">
+                                        ¿Cuál es su rango de edad?
+                                    </legend>
 
-            <p>¿Es tu primera visita al Cotopaxi?:</p>
-            <input type="radio" id="si" name="primera visita" value="si">
-            <label for="si">Si</label><br>
+                                    <div class="form-field">
+                                        <input type="radio" id="edad1" name="edad" value="-18" class="radio">
+                                        <label for="edad1">Menos de 18</label>
+                                    </div>
 
-            <input type="radio" id="no" name="primera visita" value="no">
-            <label for="si">No</label><br>
+                                    <div class="form-field">
+                                        <input type="radio" id="edad2" name="edad" value="18-25" class="radio">
+                                        <label for="edad2">18-25</label>
+                                    </div>
 
-            <p>¿Con quien realizas esta visita?:</p>
-            <input type="radio" id="familia1" name="familiar" value="solo">
-            <label for="familia1">Solo/a</label><br>
+                                    <div class="form-field">
+                                        <input type="radio" id="edad3" name="edad" value="26-40" class="radio">
+                                        <label for="edad3">26-40</label>
+                                    </div>
 
-            <input type="radio" id="familia2" name="familiar" value="pareja">
-            <label for="familia2">Pareja</label><br>
+                                    <div class="form-field">
+                                        <input type="radio" id="edad4" name="edad" value="41-60" class="radio">
+                                        <label for="edad4">41-60</label>
+                                    </div>
 
-            <input type="radio" id="familia3" name="familiar" value="amigos">
-            <label for="familia3">Amigos</label><br>
-            
-            <input type="radio" id="familia4" name="familiar" value="grupo">
-            <label for="familia4">Grupo Organizado</label><br>
+                                    <div class="form-field">
+                                        <input type="radio" id="edad5" name="edad" value="+60" class="radio">
+                                        <label for="edad5">Más de 60</label>
+                                    </div>
+                                </fieldset>
 
-            <p>¿Cuales son los motivos de tu visita?:</p>
+                                <fieldset class="mb-4">
+                                    <legend class="fs-6 fw-bold">
+                                        ¿Es tu primera visita al Cotopaxi?
+                                    </legend>
 
-            <input type="checkbox" id="visita1" name="visita1" value="descanso">
-            <label for="visita1">Descanso</label><br>
+                                    <div class="form-field">
+                                        <input type="radio" id="si"
+                                            name="primera_visita" value="si"
+                                            class="radio">
+                                        <label for="si">Sí</label>
+                                    </div>
 
-            <input type="checkbox" id="visita2" name="visita2" value="aventura">
-            <label for="visita2">Aventura</label><br>
+                                    <div class="form-field">
+                                        <input type="radio" id="no"
+                                            name="primera_visita" value="no"
+                                            class="radio">
+                                        <label for="no">No</label>
+                                    </div>
+                                </fieldset>
 
-            <input type="checkbox" id="visita3" name="visita3" value="fotografia">
-            <label for="visita1">Fotografia</label><br>
 
-            <p>¿Como te enteraste de este destino?:</p>
+                                <fieldset class="mb-4">
+                                    <legend class="fs-6 fw-bold">
+                                        ¿Con quién realizas está visita?
+                                    </legend>
 
-            <input type="checkbox" id="destino1" name="destino1" value="redes">
-            <label for="destino1">Redes Sociales</label><br>
+                                    <div class="form-field">
+                                        <input type="checkbox" id="familia1" name="familia" value="Solo" class="check">
+                                        <label for="familia1">Solo/a</label>
+                                    </div>
 
-            <input type="checkbox" id="destino2" name="destino2" value="web">
-            <label for="destino2">Pagina Web</label><br>
+                                    <div class="form-field">
+                                        <input type="checkbox" id="familia2" name="familia" value="Pareja" class="check">
+                                        <label for="familia2">Pareja</label>
+                                    </div>
 
-            <input type="checkbox" id="destino3" name="destino3" value="conocidos">
-            <label for="destino3">Conocidos</label><br>
+                                    <div class="form-field">
+                                        <input type="checkbox" id="familia3" name="familia" value="Amigos" class="check">
+                                        <label for="familia3">Amigos</label>
+                                    </div>
 
-            <p>¿Que actividades piensas hacer?</p>
+                                    <div class="form-field">
+                                        <input type="checkbox" id="familia4" name="familia" value="Grupo" class="check">
+                                        <label for="familia4">Grupo Organizado</label>
+                                    </div>
+                                </fieldset>
 
-            <input type="checkbox" id="actividad1" name="actividad1" value="caminata">
-            <label for="actividad1">Caminata</label><br>
+                                <fieldset class="mb-4">
+                                    <legend class="fs-6 fw-bold">
+                                        ¿Cuáles son los motivos de tu visita?
+                                    </legend>
 
-            <input type="checkbox" id="actividad2" name="actividad2" value="fotografia">
-            <label for="actividad2">Fotografia</label><br>
+                                    <div class="form-field">
+                                        <input type="checkbox" id="motivo1" name="motivo" value="exploracion" class="check">
+                                        <label for="motivo1">Exploración</label>
+                                    </div>
 
-            <input type="checkbox" id="actividad3" name="actividad3" value="ciclismo">
-            <label for="actividad3">Ciclismo</label><br>
+                                    <div class="form-field">
+                                        <input type="checkbox" id="motivo2" name="motivo" value="descanso" class="check">
+                                        <label for="motivo2">Descanso</label>
+                                    </div>
 
-            <p>¿Que servicios piensas usar?</p>
+                                    <div class="form-field">
+                                        <input type="checkbox" id="motivo3" name="familia" value="fotografia" class="check">
+                                        <label for="motivo3">Fotografía</label>
+                                    </div>
+                                </fieldset>
 
-            <input type="checkbox" id="servicio1" name="servicio1" value="guia">
-            <label for="servicio1">Guia Turistico</label><br>
+                                <fieldset class="mb-4">
+                                    <legend class="fs-6 fw-bold">
+                                        ¿Cómo te enteraste de este destino?
+                                    </legend>
 
-            <input type="checkbox" id="servicio2" name="servicio2" value="alimentacion">
-            <label for="servicio2">Alimentacion</label><br>
+                                    <div class="form-field">
+                                        <input type="checkbox" id="destino1" name="destino" value="redes" class="check">
+                                        <label for="destino1">Redes Sociales</label>
+                                    </div>
 
-            <input type="checkbox" id="servicio3" name="servicio3" value="transporte">
-            <label for="servicio3">Transporte</label><br>
+                                    <div class="form-field">
+                                        <input type="checkbox" id="destino2" name="destino" value="web" class="check">
+                                        <label for="destino2">Página Web</label>
+                                    </div>
 
-            <p>Escriba recomandaciones para su visita:</p>
+                                    <div class="form-field">
+                                        <input type="checkbox" id="destino3" name="destino1" value="conocidos" class="check">
+                                        <label for="destino3">Conocidos</label>
+                                    </div>
+                                </fieldset>
 
-            <textarea name="message" style="width:200px; height:200px;"></textarea><br><br>
+                                <fieldset class="mb-4">
+                                    <legend class="fs-6 fw-bold">
+                                        ¿Que actividades piensas hacer?
+                                    </legend>
 
-            <input type="submit" value="Enviar Encuesta">
-        </form>
+                                    <div class="form-field">
+                                        <input type="checkbox" id="destino1" name="destino" value="redes" class="check">
+                                        <label for="destino1">Redes Sociales</label>
+                                    </div>
+
+                                    <div class="form-field">
+                                        <input type="checkbox" id="destino2" name="destino" value="web" class="check">
+                                        <label for="destino2">Página Web</label>
+                                    </div>
+
+                                    <div class="form-field">
+                                        <input type="checkbox" id="destino3" name="destino1" value="conocidos" class="check">
+                                        <label for="destino3">Conocidos</label>
+                                    </div>
+                                </fieldset>
+
+                                <p>¿Que actividades piensas hacer?</p>
+
+                                <input type="checkbox" id="actividad1" name="actividad1" value="caminata">
+                                <label for="actividad1">Caminata</label><br>
+
+                                <input type="checkbox" id="actividad2" name="actividad2" value="fotografia">
+                                <label for="actividad2">Fotografia</label><br>
+
+                                <input type="checkbox" id="actividad3" name="actividad3" value="ciclismo">
+                                <label for="actividad3">Ciclismo</label><br>
+
+                                <p>¿Que servicios piensas usar?</p>
+
+                                <input type="checkbox" id="servicio1" name="servicio1" value="guia">
+                                <label for="servicio1">Guia Turistico</label><br>
+
+                                <input type="checkbox" id="servicio2" name="servicio2" value="alimentacion">
+                                <label for="servicio2">Alimentacion</label><br>
+
+                                <input type="checkbox" id="servicio3" name="servicio3" value="transporte">
+                                <label for="servicio3">Transporte</label><br>
+
+                                
+                                <div class="mb-4">
+                                    <label for="message" class="form-label fw-bold">
+                                        Escriba recomendaciones para su visita:
+                                    </label>
+
+                                    <textarea id="message" name="message" class="form-control" rows="4" placeholder="Escriba aquí..."></textarea>
+                                </div>
+
+                                <input type="button" value="Enviar Encuesta" class="btn btn-success">
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
